@@ -21,7 +21,7 @@ export default class Contract {
   terms_and_conditions:   TermsAndConditions;
 
   status:                 string;
-  events:                 [SubscriptionRenewed, CustomerReimbursementRequested];
+  events:                 Array<SubscriptionRenewed | CustomerReimbursementRequested>;
 
   claims:                 Claim[];
 
